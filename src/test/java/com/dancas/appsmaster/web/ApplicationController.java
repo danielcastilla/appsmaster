@@ -19,6 +19,7 @@ public class ApplicationController {
     @GetMapping(value="/applications")
     public List<Application> getApplications(){
 
+        System.out.println("********************");
         return applicationService.findAll();
 
     }
