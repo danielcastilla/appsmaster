@@ -2,11 +2,12 @@ package com.dancas.appsmaster.service.impl;
 
 import com.dancas.appsmaster.model.Application;
 import com.dancas.appsmaster.service.IApplicationService;
+import org.springframework.stereotype.Service;
 
-import java.applet.Applet;
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class ApplicationService implements IApplicationService{
 
 
