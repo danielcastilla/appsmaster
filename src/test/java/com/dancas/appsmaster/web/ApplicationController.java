@@ -16,7 +16,7 @@ public class ApplicationController {
     @Autowired
     IApplicationService applicationService;
 
-    @GetMapping(value="/applications")
+    @GetMapping("/applications")
     public List<Application> getApplications(){
 
         System.out.println("********************");
