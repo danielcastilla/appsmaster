@@ -8,4 +8,6 @@ public interface IApplicationService {
 
     List<Application> findAll();
 
+
+
 }
