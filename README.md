@@ -1,5 +1,7 @@
 # Application Master
 
+
+
 * Spring Boot 2.3.0 RELEASE
 * Actuator
 * H2 In memory
