@@ -1,3 +1,7 @@
 language: java
+<<<<<<< HEAD
 
 script: mvn -B verify
+=======
+script: mvn -B verify
+>>>>>>> c745ad4cd16370cc74a66cd4e74483bba4b1a568
