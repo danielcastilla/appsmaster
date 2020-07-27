@@ -41,4 +41,10 @@ public class Application {
         this.mail = mail;
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "Application{" + "id=" + id + ", name=" + name + ", mail=" + mail + '}';
+    }
+
 }

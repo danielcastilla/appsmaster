@@ -10,8 +10,8 @@ import java.util.List;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
 public class ApplicationController {
 
 
@@ -26,6 +26,7 @@ public class ApplicationController {
     @GetMapping("/applications")
     public List<Application> getApplications(){
         System.out.println("******** /GET *******");
+        System.out.println(applicationRepository.findAll().toString());
         return (List<Application>) applicationRepository.findAll();
     }
 

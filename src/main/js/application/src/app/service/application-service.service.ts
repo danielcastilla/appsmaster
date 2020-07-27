@@ -9,14 +9,14 @@ export class ApplicationService {
 private applicationsUrl: string;
 
 constructor(private http: HttpClient) {
-    this.applicationsUrl = 'http://localhost:8080/applications';
+    this.applicationsUrl = 'http://localhost:8080';
   }
 
   public findAll(): Observable<Application[]> {
-    return this.http.get<Application[]>(this.applicationsUrl);
+    return this.http.get<Application[]>(`${this.applicationsUrl}/applications`);
   }
 
   public save(application: Application) {
-    return this.http.post<Application>(this.applicationsUrl, application);
+    return this.http.post<Application>(`${this.applicationsUrl}/application`, application);
   }
 }

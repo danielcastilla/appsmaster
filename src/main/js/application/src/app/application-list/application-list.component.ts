@@ -12,6 +12,7 @@ export class ApplicationListComponent implements OnInit {
   applications: Application[];
 
   constructor(private applicationService: ApplicationService) {
+
   }
 
   ngOnInit() {
