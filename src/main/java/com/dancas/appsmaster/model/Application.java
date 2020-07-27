@@ -12,11 +12,16 @@ public class Application {
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
     private String name;
-    private String description;
+    private String mail;
 
-    public Application(String name, String description) {
+    public Application(){
+        this.name = "";
+        this.mail = "";
+    }
+
+    public Application(String name, String mail) {
         this.name = name;
-        this.description = description;
+        this.mail = mail;
     }
 
     public String getName() {
@@ -28,12 +33,12 @@ public class Application {
         return this;
     }
 
-    public String getDescription() {
-        return description;
+    public String getMail(){
+        return mail;
     }
 
-    public Application setDescription(String description) {
-        this.description = description;
+    public Application setMail(String mail){
+        this.mail = mail;
         return this;
     }
 }

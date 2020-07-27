@@ -29,3 +29,11 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+node_modules
+typings
+jspm_packages
+bower_components
+app/**/*.js
+app/**/*.map
