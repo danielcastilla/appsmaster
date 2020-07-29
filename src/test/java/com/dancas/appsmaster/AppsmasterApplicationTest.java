@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = AppsmasterApplication.class)
-public class AppsmasterApplicationTests {
+public class AppsmasterApplicationTest {
 
 	@Test
 	public void whenSpringContextIsBootstrapped_thenNoExceptions() {
