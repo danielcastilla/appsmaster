@@ -8,7 +8,11 @@ import { ApplicationListComponent } from './application-list/application-list.co
 import { ApplicationFormComponent } from './application-form/application-form.component';
 import { ApplicationService } from './service/application-service.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSliderModule } from '@angular/material/slider';
+import {DataSource} from '@angular/cdk/collections';
+import { MatTableModule } from '@angular/material/table';
+
+
+
 
 
 @NgModule({
@@ -23,8 +27,8 @@ import { MatSliderModule } from '@angular/material/slider';
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatSliderModule
-  ],
+    MatTableModule
+    ],
   providers: [ApplicationService],
   bootstrap: [AppComponent]
   })
