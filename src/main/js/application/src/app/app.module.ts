@@ -7,20 +7,26 @@ import { AppComponent } from './app.component';
 import { ApplicationListComponent } from './application-list/application-list.component';
 import { ApplicationFormComponent } from './application-form/application-form.component';
 import { ApplicationService } from './service/application-service.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+
 
 @NgModule({
-declarations: [
-AppComponent,
-ApplicationListComponent,
-ApplicationFormComponent
-],
-imports: [
-BrowserModule,
-AppRoutingModule,
-HttpClientModule,
-FormsModule
-],
-providers: [ApplicationService],
-bootstrap: [AppComponent]
-})
+  declarations: [
+    AppComponent,
+    ApplicationListComponent,
+    ApplicationFormComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatSliderModule
+  ],
+  providers: [ApplicationService],
+  bootstrap: [AppComponent]
+  })
+
 export class AppModule { }

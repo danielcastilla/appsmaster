@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Application } from '../model/application';
 import { ApplicationService } from '../service/application-service.service';
+import {MatTableModule} from '@angular/material/table';
+
 
 @Component({
   selector: 'app-application-list',
