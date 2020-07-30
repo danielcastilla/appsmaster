@@ -14,7 +14,7 @@ import {BehaviorSubject, Observable} from 'rxjs';
 
 
 export class ApplicationListComponent implements OnInit {
-  displayedColumns: string[] = ['name', 'mail'];
+  displayedColumns: string[] = ['name', 'mail', 'description', 'initDate'];
   applications: Application[];
   constructor(private applicationService: ApplicationService) {
 

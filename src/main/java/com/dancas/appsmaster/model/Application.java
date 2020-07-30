@@ -1,29 +1,72 @@
 package com.dancas.appsmaster.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import org.hibernate.annotations.NotFound;
+import org.hibernate.annotations.NotFoundAction;
+
+import javax.persistence.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
 
 @Entity
 public class Application {
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    private Integer id;
+    private Long id;
     private String name;
     private String mail;
+    private String description;
+    private Date initDate;
+
+
+    //@OneToMany(mappedBy = "application")
+    //private List<AppEntity> appEntity;
 
     public Application(){
-        this.name = "";
-        this.mail = "";
+
     }
 
-    public Application(String name, String mail) {
+    public Application(Long id, String name, String mail, String description, Date initDate, List<AppEntity> appEntity) {
+        this.id = id;
         this.name = name;
         this.mail = mail;
+        this.description = description;
+        this.initDate = initDate;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Date getInitDate() {
+        return initDate;
+    }
+
+    public void setInitDate(Date initDate) {
+        this.initDate = initDate;
+    }
+/**
+    public List<AppEntity> getAppEntity() {
+        return appEntity;
+    }
+
+    public void setAppEntity(List<AppEntity> appEntity) {
+        this.appEntity = appEntity;
+    }
+*/
     public String getName() {
         return name;
     }
@@ -44,7 +87,13 @@ public class Application {
 
     @Override
     public String toString() {
-        return "Application{" + "id=" + id + ", name=" + name + ", mail=" + mail + '}';
+        return "Application{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", mail='" + mail + '\'' +
+                ", description='" + description + '\'' +
+                ", initDate=" + initDate +
+   //             ", appEntity=" + appEntity +
+                '}';
     }
-
 }
