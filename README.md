@@ -10,4 +10,4 @@
 ## Front
 
 * Angular
-* Material
+* Angular Material
