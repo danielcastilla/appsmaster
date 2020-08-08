@@ -15,10 +15,10 @@ public class AppEntity {
     private String name;
     private String description;
 
-    @NotFound(action = NotFoundAction.IGNORE)
-    @ManyToOne()
-    @JoinColumn(name = "application_id")
-    private Application application;
+    //@NotFound(action = NotFoundAction.IGNORE)
+    //@ManyToOne()
+    //@JoinColumn(name = "application_id")
+    //private Application application;
 
     public AppEntity(){
 
@@ -36,14 +36,6 @@ public class AppEntity {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public Application getApplication() {
-        return application;
-    }
-
-    public void setApplication(Application application) {
-        this.application = application;
     }
 
     public String getName() {
