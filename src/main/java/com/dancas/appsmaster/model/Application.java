@@ -20,12 +20,7 @@ public class Application {
     private Date initdate;
 
 
-    //@OneToMany(mappedBy = "application")
-    //private List<AppEntity> appEntity;
-
-    public Application(){
-
-    }
+    public Application(){}
 
     public Application(Long id, String name, String mail, String description, Date initdate, List<AppEntity> appEntity) {
         this.id = id;
@@ -58,15 +53,7 @@ public class Application {
     public void setInitdate(Date initDate) {
         this.initdate = initdate;
     }
-/**
-    public List<AppEntity> getAppEntity() {
-        return appEntity;
-    }
 
-    public void setAppEntity(List<AppEntity> appEntity) {
-        this.appEntity = appEntity;
-    }
-*/
     public String getName() {
         return name;
     }
@@ -93,7 +80,6 @@ public class Application {
                 ", mail='" + mail + '\'' +
                 ", description='" + description + '\'' +
                 ", initDate=" + initdate +
-   //             ", appEntity=" + appEntity +
                 '}';
     }
 }

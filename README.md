@@ -11,3 +11,17 @@
 
 * Angular
 * Angular Material
+
+
+#### Test
+
+Example of json
+
+``` json 
+{
+   "name": "App1",
+   "mail": "mail1@domain.com",
+   "description": "1 Description of application number one",
+   "initdate": "2020-11-11"
+ }
+```
